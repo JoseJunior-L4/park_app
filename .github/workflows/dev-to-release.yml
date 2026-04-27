@@ -1,13 +1,15 @@
-name: Dev to Release Pipeline
+name: Dev to Release
 
 on:
-  push:
+  pull_request:
     branches:
       - release
+    types:
+      - closed
 
 jobs:
   full-test-suite:
-    name: Full Flutter Test Suite
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
@@ -29,7 +31,7 @@ jobs:
           path: coverage/
 
   build-android:
-    name: Build Android APK
+    if: github.event.pull_request.merged == true
     needs: full-test-suite
     runs-on: ubuntu-latest
 
@@ -50,7 +52,7 @@ jobs:
           path: build/app/outputs/flutter-apk/app-release.apk
 
   build-ios:
-    name: Build iOS IPA
+    if: github.event.pull_request.merged == true
     needs: full-test-suite
     runs-on: macos-latest
 

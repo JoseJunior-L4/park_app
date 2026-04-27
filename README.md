@@ -1,16 +1,22 @@
-# park_app
+# Estacionamento no ISCTEM 🚗
 
-A new Flutter project.
+Este é uma app feito em Flutter para ajudar no gestão de estacionamento no ISCTEM.
 
-## Getting Started
+Com o objectivo de facilitar a vida de quem precisa estacionar na faculdade, tornando o processo mais rápido e organizado.
 
-This project is a starting point for a Flutter application.
+## O que a app faz
 
-A few resources to get you started if this is your first Flutter project:
+- Mostra informações sobre vagas de estacionamento
+- Ajuda a evitar confusão na entrada/saída
+- Torna o uso do estacionamento mais simples no dia a dia
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Tecnologias usadas
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter
+- Dart
+
+## Como correr o projeto
+
+1. Clone o repositório
+2. Execute `flutter pub get`
+3. Corre a app com `flutter run`
